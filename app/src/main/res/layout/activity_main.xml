@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewanswer"
+        android:layout_width="325dp"
+        android:layout_height="162dp"
+        android:layout_marginTop="468dp"
+        android:text="Result"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.524" />
+
+    <TextView
+        android:id="@+id/textViewoperation"
+        android:layout_width="57dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:text="Operation"
+        android:textAlignment="center"
+        android:textColor="#EB0303"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/edittextsecondnumber"
+        app:layout_constraintStart_toEndOf="@+id/edittextfirstnumber"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edittextfirstnumber"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Input Number 1"
+        android:inputType="numberDecimal"
+        android:textColorHint="#FA0202"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edittextsecondnumber"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Input Number 2"
+        android:inputType="numberDecimal"
+        android:textColorHint="#F70404"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.027"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittextfirstnumber" />
+
+    <Button
+        android:id="@+id/buttonsubtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Subtract"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toEndOf="@+id/buttonadd"
+        app:layout_constraintTop_toBottomOf="@+id/edittextfirstnumber" />
+
+    <Button
+        android:id="@+id/buttonmultiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Multiply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toEndOf="@+id/buttonsubtract"
+        app:layout_constraintTop_toBottomOf="@+id/textViewoperation" />
+
+    <Button
+        android:id="@+id/buttondivide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Divide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toEndOf="@+id/buttonmultiply"
+        app:layout_constraintTop_toBottomOf="@+id/edittextsecondnumber" />
+
+    <Button
+        android:id="@+id/buttonsquareroot"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:text="SQUARE Root"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.027"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonadd" />
+
+    <Button
+        android:id="@+id/buttoncosine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="Cosine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonsquareroot" />
+
+    <Button
+        android:id="@+id/buttonsine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="Sine"
+        app:layout_constraintStart_toEndOf="@+id/buttoncosine"
+        app:layout_constraintTop_toBottomOf="@+id/buttonbase10" />
+
+    <Button
+        android:id="@+id/buttontangent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="Tangent"
+        app:layout_constraintStart_toEndOf="@+id/buttonsine"
+        app:layout_constraintTop_toBottomOf="@+id/buttonbase10" />
+
+    <Button
+        android:id="@+id/buttonpower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="Power"
+        app:layout_constraintStart_toEndOf="@+id/buttontangent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonfactorial" />
+
+    <Button
+        android:id="@+id/buttonbase10"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Base 10 Log"
+        app:layout_constraintStart_toEndOf="@+id/buttonsquareroot"
+        app:layout_constraintTop_toBottomOf="@+id/buttonsubtract" />
+
+    <Button
+        android:id="@+id/buttonfactorial"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Factorial!"
+        app:layout_constraintStart_toEndOf="@+id/buttonbase10"
+        app:layout_constraintTop_toBottomOf="@+id/buttondivide" />
+
+    <Button
+        android:id="@+id/buttonclear"
+        android:layout_width="282dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="288dp"
+        android:text="Clear all"
+        android:textColor="#0636E2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="111dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonclear"
+        app:srcCompat="@mipmap/ic_launcher_foreground" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
